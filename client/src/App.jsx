@@ -24,7 +24,7 @@ function App() {
            
           </Switch>
 
-          <div className='padding-x  padding-y 2xl:max-w-[1800px] 2xl:m-auto'>
+          <div className='padding-x mt-28 py-4 2xl:max-w-[1800px] 2xl:m-auto'>
           <Footer/>
           </div>
         </Router>

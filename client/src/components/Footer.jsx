@@ -7,7 +7,7 @@ import youto from '../assets/youtu.svg'
 
 export default function Footer() {
   return (
-    <div className=" flex md:flex-row flex-col md: items-baseline md:justify-normal max-md: justify-center max-md:items-center gap-10 md:gap-20">
+    <div className=" flex md:flex-row flex-col md:items-baseline md:justify-normal max-md: justify-center max-md:items-center gap-10 md:gap-20">
       <div className=" flex-1">
         <div className=' flex flex-col md:gap-52'>
           <div className='' >

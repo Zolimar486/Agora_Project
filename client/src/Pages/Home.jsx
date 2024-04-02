@@ -1,10 +1,9 @@
 import About from "../components/About";
 import Benefit from "../components/Benefit";
 import Features from "../components/Features";
-import Footer from "../components/Footer";
-import Form from "../components/Form";
 import Header from "../components/Header";
 import Offers from "../components/Offers";
+import Subscribed from "../components/Subscribed";
 
 
 export default function Home() {
@@ -25,7 +24,8 @@ export default function Home() {
      <Features/>
       </div>
        <div> 
-        <Form/>
+        <Subscribed/>
+
        </div>
        
     </>
