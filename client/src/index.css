@@ -93,8 +93,14 @@
     background-color: rgba(0, 0, 0, 0.426);
   }
 
+  .card-image {
+    transition: transform 0.2s;
+    transform-origin: center;
+  }
   
-
+  .card-image:hover {
+    transform: scale(1.05);
+  }
   .bgGray{
     background-color: #333333;
   }

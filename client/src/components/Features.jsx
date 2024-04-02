@@ -1,9 +1,15 @@
-
-
+import { motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Features() {
+  useEffect(() => {
+    AOS.init({duration:3000})
+  }, []);
+
   return (
-    <div >
+    <div data-aos="zoom-in">
       <div className=" flex items-baseline max-md:flex-col justify-normal gap-40 xl:gap-80 max-lg:gap-20 max-md:gap-8 ">
         <h1 className=" itemColor text-[30px] max-md:text-[25px] max-sm:text-[29px] font-bold">Oportunidades laborales</h1>
         <button className=" background py-2 px-4 text-white rounded-2xl">Conoces todas nuestras vacantes</button>
@@ -20,7 +26,7 @@ export default function Features() {
                 </div>
                 <div className=" my-10">
                   <h1 className=" text-gray-700 my-3 font-bold ">Diseñador Gráfico Freelance</h1>
-                  <p className=" text-gray-500">Buscamos un/a Diseñador/a Gráfico con al menos 3 años de experiencia en diseño de presentaciones,materiales educativos, brochures, y otros materiales asociados a productos educativos digitales.</p>
+                  <p className=" text-gray-500 line-clamp-3">Buscamos un/a Diseñador/a Gráfico con al menos 3 años de experiencia en diseño de presentaciones,materiales educativos, brochures, y otros materiales .</p>
                   <button className=" my-4 py-2 px-4 background text-white rounded-xl">CONOCER MAS</button>
                 </div>
               </div>
@@ -33,7 +39,7 @@ export default function Features() {
                 </div>
                 <div className=" my-10">
                   <h1 className=" text-gray-700 my-3 font-bold">Data Engineer (Ingeniero/a de Datos)</h1>
-                  <p className=" text-gray-500">Buscamos un/a Data Engineer(Ingeniero de Datos) que contribuya al desarrollo, implementación y mantenimiento de un sistema degestión de datos eficiente, eficaz y robusto</p>
+                  <p className=" line-clamp-3 text-gray-500">Buscamos un/a Data Engineer(Ingeniero de Datos) que contribuya al desarrollo, implementación y mantenimiento de un sistema degestión de datos eficiente, eficaz y robusto</p>
                   <button className=" my-4 py-2 px-4 background text-white rounded-xl">CONOCER MAS</button>
                 </div>
               </div>
@@ -44,7 +50,7 @@ export default function Features() {
                 </div>
                 <div className=" my-10">
                   <h1 className=" text-gray-700 my-3 font-bold">Gerente de Alianzas</h1>
-                  <p className=" text-gray-500">Buscamos un/una profesional con experiencia y habilidades en la construcción y gestión de alianzas comerciales y estratégicas con múltiples tipos de organizaciones.</p>
+                  <p className=" line-clamp-3 text-gray-500">Buscamos un/una profesional con experiencia y habilidades en la construcción y gestión de alianzas comerciales y estratégicas con múltiples tipos de organizaciones.</p>
                   <button className=" my-4 py-2 px-4 background text-white rounded-xl">CONOCER MAS</button>
                 </div>
               </div>

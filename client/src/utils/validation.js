@@ -29,9 +29,9 @@ const validateEmpresa= ({empresa, setEmpresaError})=>{
 
 const validatePais = ({ pais, setPaisError }) => {
  
-
+  
   if (!pais) {
-    setPaisError("Por favor, seleccione un país");
+    setPaisError("");
   } else {
     const country = Object.values(countries.countries).find(
       (data) => data.name.toLowerCase() === pais.toLowerCase()
@@ -43,6 +43,7 @@ const validatePais = ({ pais, setPaisError }) => {
       setPaisError("");
     }
   }
+ 
 };
 
 
