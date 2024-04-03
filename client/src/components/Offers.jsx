@@ -1,13 +1,10 @@
-import { useState, useEffect, useRef } from "react"
 import { ArrowUpRight } from 'lucide-react';
 import { images } from "../utils/dummy";
 import { images1 } from "../utils/dummy";
 
 export default function Offers() {
-  
 
 
-  
   return (
     <div className=" flex flex-col gap-8">
       <div>
@@ -24,32 +21,32 @@ export default function Offers() {
           </div>
         </div>
         <div className=" my-10 overflow-hidden  ">
-         <div className=" flex mx-10 animate-loop-scroll">
+          <div className=" flex mx-10 animate-loop-scroll">
 
-         {images.map((item, index) => (
+            {images.map((item, index) => (
               <img key={index} src={item} alt="images" className="w-[220px] mr-4" />
             ))}
             {images.map((item, index) => (
               <img key={`duplicate-${index}`} src={item} alt="images" className="w-[220px] mr-4" />
             ))}
-         </div>
+          </div>
         </div>
-       
+
       </div>
       <div className=" my-4">
         <div>
           <h1 className="itemColor text-[20px] my-2 font-bold">Nuestros Financiadores</h1>
           <div className=" my-10 overflow-hidden  ">
-         <div className=" flex mx-10 animate-loop-scroll">
+            <div className=" flex mx-10 animate-loop-scroll">
 
-         {images1.map((item, index) => (
-              <img key={index} src={item} alt="images" className="w-[210px] mr-4" />
-            ))}
-            {images1.map((item, index) => (
-              <img key={`duplicate-${index}`} src={item} alt="images" className="w-[220px] mr-4" />
-            ))}
-         </div>
-        </div>
+              {images1.map((item, index) => (
+                <img key={index} src={item} alt="images" className="w-[210px] mr-4" />
+              ))}
+              {images1.map((item, index) => (
+                <img key={`duplicate-${index}`} src={item} alt="images" className="w-[220px] mr-4" />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ export const FontSizeProvider = ({ children }) => {
 
   const increaseTextSize = () => setTextSize(prevSize => prevSize + 2);
   const increaseLineSpacing = () => setLineSpacing('1.5');
-  const increaseWordSpacing = () => setWordSpacing('0.2em');
+  const increaseWordSpacing = () => setWordSpacing('0.3em');
   const toggleGrayscale = () => setGrayscale(prevValue => !prevValue);
   const toggleHighContrast = () => setHighContrast(prevValue => !prevValue);
   const toggleWhiteContrast = () => setWhiteContrast(prevValue => !prevValue);

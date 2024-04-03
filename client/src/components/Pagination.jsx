@@ -12,15 +12,15 @@ export default function Pagination({ totalCards, cardsPerPage, paginations }) {
     <div className=" mt-9">
       <div className="flex items-center justify-center">
         <ul className="flex items-baseline justify-normal gap-4">
-          {pagesNumbers.map((pageNumber) =>  (
+          {pagesNumbers.map((pageNumber) => (
             <li key={pageNumber}>
-            <button
-              className=" change cursor-pointer "
-              onClick={() => paginations(pageNumber)}
-            >
-              {pageNumber}
-            </button>
-          </li>
+              <button
+                className=" change cursor-pointer "
+                onClick={() => paginations(pageNumber)}
+              >
+                {pageNumber}
+              </button>
+            </li>
           ))}
         </ul>
       </div>

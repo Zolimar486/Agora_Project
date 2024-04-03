@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Accessibility, ZoomIn, Space, Barcode , AlignVerticalSpaceAround, Contrast,  Lightbulb, RotateCcw, Eye  } from 'lucide-react'
+import { Accessibility, ZoomIn, Space, Barcode, AlignVerticalSpaceAround, Contrast, Lightbulb, RotateCcw, Eye } from 'lucide-react'
 import { useFontSize } from '../Context/FontSizeContext';
 
 
 
 const AccessTool = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { increaseTextSize, increaseLineSpacing, increaseWordSpacing, toggleGrayscale,  toggleHighContrast,toggleWhiteContrast, toggleNegativeContrast, resetAll } = useFontSize();
+  const { increaseTextSize, increaseLineSpacing, increaseWordSpacing, toggleGrayscale, toggleHighContrast, toggleWhiteContrast, toggleNegativeContrast, resetAll } = useFontSize();
 
   return (
     <div className="fixed top-[60px] left-0 z-[9999] font-poppins">
@@ -82,7 +82,7 @@ const AccessTool = () => {
 
           <div className='p-1'>
             <div className=' flex items-start justify-start gap-2 my-1'>
-              <  Eye  size={16} className=' text-gray-800' />
+              <  Eye size={16} className=' text-gray-800' />
               <div className=' flex flex-col gap-2'>
                 <p className="text-gray-800 font-medium text-sm cursor-pointer" onClick={toggleNegativeContrast} >Contraste Negativo</p>
 
@@ -92,16 +92,16 @@ const AccessTool = () => {
 
           <div className='p-1'>
             <div className=' flex items-start justify-start gap-2 my-1'>
-              <  RotateCcw  size={16} className=' text-gray-800' />
+              <  RotateCcw size={16} className=' text-gray-800' />
               <div className=' flex flex-col gap-2'>
-              <button className="text-gray-800 font-medium text-sm cursor-pointer" onClick={resetAll}>
-              Restablecer
-            </button>
+                <button className="text-gray-800 font-medium text-sm cursor-pointer" onClick={resetAll}>
+                  Restablecer
+                </button>
 
               </div>
             </div>
           </div>
-         
+
         </div>
       </div>
 

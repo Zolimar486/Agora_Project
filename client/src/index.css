@@ -46,7 +46,6 @@
     
   }
   
-  
 
   
 
@@ -88,6 +87,8 @@
     background-color: #c1285d;
   }
 
+  
+
   .color{
     color: black;
   }
@@ -110,11 +111,6 @@
    
   }
 
-  @media only screen and (max-width: 400px) {
-    .small {
-      display: block;
-    }
-  }
 
   .slider-image-container {
     width: 100%;
@@ -140,6 +136,9 @@
     @apply xl:px-28 px-8;
   }
 
+  .padding-xResponsive{
+    @apply sm:px-8 px-1;
+  }
   
 
   .padding-y {

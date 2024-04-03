@@ -17,18 +17,18 @@ export default function Benefit() {
       }
     }, 6)
 
-    const catalizadoresInterval = setInterval(()=> {
-      if(catalizadores < 329){
+    const catalizadoresInterval = setInterval(() => {
+      if (catalizadores < 329) {
         setCatalizadores(prevCount => prevCount + 1)
-      }else {
+      } else {
         clearInterval(catalizadoresInterval)
       }
     }, 6)
 
-    const emprededoresInterval = setInterval(()=> {
-      if(emprededores < 2300){
+    const emprededoresInterval = setInterval(() => {
+      if (emprededores < 2300) {
         setEmprendedores(prevCount => prevCount + 1)
-      }else {
+      } else {
         clearInterval(emprededoresInterval)
       }
     }, 6)
@@ -40,7 +40,7 @@ export default function Benefit() {
     }
   }, [paises, catalizadores, emprededores])
 
-  
+
   return (
     <div className="  rounded-xl padding-x  padding-y blue flex md:flex-row flex-col md:items-center justify-between">
       <div>
