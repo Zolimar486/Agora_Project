@@ -12,7 +12,7 @@ export const array = [
     title:"Ecosistema",
     desc:"Contribuimos al fortalecimiento del ecosistema de emprendedores y pequeñas empresas en crecimiento a través de eventos, tales como el programa Formando Catalizadores, y el co-liderazgo de la Red de Impacto, integrada por más de 100 organizaciones de la región.",
     img:"https://agora2030.org/wp-content/uploads/2023/07/planeacion.png",
-    bg:"#ECDD33"
+    bg:"rgb(255, 191, 0)"
   },
 
   {
@@ -20,7 +20,7 @@ export const array = [
     title:"Proyectos inclusivos",
     desc:"Ejecutamos proyectos específicos junto a aliados con los que compartimos nuestra visión por la inclusión financiera, la equidad de género, la diversificación,resiliencia y sostenibilidad en las cadenas de valor, y la adaptación al cambio climático en la región.",
     img:"https://agora2030.org/wp-content/uploads/2023/07/empresario-levantando-la-mano-e1689204118270.png",
-    bg:"#223B03"
+    bg:"#118a7e"
   },
 
 

@@ -44,7 +44,7 @@ export default function About() {
               <div className=" my-2 rounded-xl p-4" style={{ backgroundColor: hoveredItem === item.id ? item.bg : "" }} onMouseEnter={() => handleItemHover(item.id)}
                 onMouseLeave={handleItemLeave}>
                 <h1 className={`group-hover:text-white text-gray-800 font-bold my-2 ${hoveredItem === item.id ? "text-white" : ""}`}>{item.title} </h1>
-                <p className=" text-gray-500 max-sm: text-sm" style={{ color: hoveredItem === item.id ? 'white' : '' }}> {item.desc} </p>
+                <p className=" text-gray-500 max-sm: text-[16px]" style={{ color: hoveredItem === item.id ? 'white' : '' }}> {item.desc} </p>
               </div>
             </div>
           ))}

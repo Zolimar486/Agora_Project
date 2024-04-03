@@ -7,10 +7,12 @@ import About from './components/About';
 import Blog from './Pages/Blog';
 import Footer from './components/Footer';
 
+
 function App() {
+
   return (
     <FontSizeProvider>
-      <div className="">
+      <div  >
         <AccessTool />
         <Router>
           <Navbar /> 

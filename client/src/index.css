@@ -41,9 +41,14 @@
   }
   
   .high-contrast {
-    background-color: black;
-    color: white;
+    color: #fff;
+    background-color: #000;
+    
   }
+  
+  
+
+  
 
   .white-contrast{
    background-color: white;
@@ -52,9 +57,7 @@
 
 
   .negative-contrast {
-    background-color: black;
-    color: yellow !important;
-    z-index: 9999;;
+    filter: invert(100%);
   }
 
   .itemColor{
@@ -93,14 +96,7 @@
     background-color: rgba(0, 0, 0, 0.426);
   }
 
-  .card-image {
-    transition: transform 0.2s;
-    transform-origin: center;
-  }
-  
-  .card-image:hover {
-    transform: scale(1.05);
-  }
+
   .bgGray{
     background-color: #333333;
   }

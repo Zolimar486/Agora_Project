@@ -88,7 +88,7 @@ const Navbar = () => {
 
       </div>
       <div className=' lg:ml-10 flex items-center justify-center  lg:block max-md:hidden'>
-        <button className='background border-none rounded-xl py-1 px-8 text-white xl:mr-3 max-xl:mr-2 max-lg:mr-[10px]'>Donar</button>
+        <button className='background border-none rounded-xl py-1 px-8 text-white xl:mr-3 max-xl:mr-2 max-lg:mr-[10px] visible-element'>Donar</button>
         <button className=' bg-slate-800 text-white rounded-md border-none py-[6px] px-4 xl:mr-4 max-xl:mr-2  max-lg:mr-[10px]'>ES</button>
         <a href="#" className=' text-gray-500 '>EN</a>
       </div>
