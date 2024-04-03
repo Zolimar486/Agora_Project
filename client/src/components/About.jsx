@@ -65,7 +65,7 @@ export default function About() {
                 <div>
                   <h1 className=" text-gray-700 my-3 font-bold ">Programa Juntas Contamos</h1>
                   <p className=" text-gray-500">Oportunidad para mujeres empresarias en México, Guatemala, El Salvador y Honduras. Juntas Contamos Consta de tres programas dirigidos a 3 perfiles diferentes de empresarias</p>
-                  <button className=" my-4 py-2 px-4 background text-white rounded-xl">CONOCER MAS</button>
+                  <button className=" my-4 py-2 px-4 background text-white rounded-xl cursor-pointer ">CONOCER MAS</button>
                 </div>
               </div>
               <div className=" relative">
@@ -78,7 +78,7 @@ export default function About() {
                 <div>
                   <h1 className=" text-gray-700 my-3 font-bold">“Alcanzar un equilibrio entre el trabajo y familia uno de los retos más importantes al ser empresaria”</h1>
                   <p className=" line-clamp-3 text-gray-500">Francis Castillo, fundadora de ‘The Baking Mom’es un gran ejemplo de cómo el ser mamá y emprendedora se puede lograr rompiendo paradigmas y miedos</p>
-                  <button className=" my-4 py-2 px-4 background text-white rounded-xl">CONOCER MAS</button>
+                  <button className=" my-4 py-2 px-4 background text-white rounded-xl cursor-pointer ">CONOCER MAS</button>
                 </div>
               </div>
               <div className="relative">
@@ -89,7 +89,7 @@ export default function About() {
                 <div>
                   <h1 className=" text-gray-700 my-3 font-bold">Transformando a América Latina: Agora Partnerships adquiere CreativeLab</h1>
                   <p className=" text-gray-500">Esta unión no solo representa una evolución en el nombre de la marca colombiana a ChangeLab, sino que también establece ambiciosas metas para el futuro.</p>
-                  <button className=" my-4 py-2 px-4 background text-white rounded-xl">CONOCER MAS</button>
+                  <button className=" my-4 py-2 px-4 background text-white rounded-xl cursor-pointer">CONOCER MAS</button>
                 </div>
               </div>
             </div>
