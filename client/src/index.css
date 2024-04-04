@@ -41,8 +41,10 @@
   }
   
   .high-contrast {
-    color: #fff;
-    background-color: #000;
+    color: #fff !important; /* Set text color to white */
+  background-color: #000 !important; /* Set background color to black */
+  border-color: #fff !important; /* Set border color to white */
+  text-decoration: underline !important; /* Underline text */
     
   }
   
@@ -50,8 +52,7 @@
   
 
   .white-contrast{
-   background-color: white;
-   color:black;
+    background-color: #fff;;
   }
 
 

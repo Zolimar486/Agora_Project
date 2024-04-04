@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useFontSize } from '../Context/FontSizeContext';
 import { Menu } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -8,15 +8,19 @@ const Navbar = () => {
   const [open, setOpen] = useState(false)
   const [openMenu, setOpenMenu] = useState(false)
   const [openSede, setOpenSede] = useState(false)
+  const timerRef = useRef(null);
 
 
   const handleHover = () => {
+    clearTimeout(timerRef.current)
     setOpenMenu(true)
   }
 
 
   const handleClose = () => {
-    setOpenMenu(false)
+    timerRef.current = setTimeout(() => {
+      setOpenMenu(false);
+    }, 1000);
   }
 
 
@@ -57,10 +61,10 @@ const Navbar = () => {
 
         <ul className=' text-gray-500 flex items-center justify-center gap-4 max-lg:flex-col max-lg:my-4'>
           <li className=' cursor-pointer'>Quiénes somos</li>
-          <li className=' cursor-pointer' onMouseEnter={handleHover}  >Programas</li>
+          <li className=' cursor-pointer' onMouseEnter={handleHover} onMouseLeave={handleClose}  >Programas</li>
 
           {openMenu && (
-            <div className='md:absolute top-[100%] right-[60%] max-lg:overflow-auto overflow-hidden w-[150px] md:w-[380px] md:right-[43%] bg-gray-400 ' onMouseLeave={handleClose}>
+            <div className='md:absolute top-[100%] right-[60%] max-lg:overflow-auto overflow-hidden w-[150px] md:w-[380px] md:right-[43%] bg-gray-400 ' >
               <div className='max-md: text-[10px] md:text-[14px] bg-gray-700 text-white my-1 p-1 md:p-4 rounded-xl cursor-pointer hover:background'>Empredimientos y pequeñas empresas en crecimientos</div>
               <div className='max-md: text-[10px] md:text-[14px] bg-gray-700 text-white my-1 p-1 md:p-4 rounded-xl cursor-pointer hover:bg-yellow-600'>Ecosistema</div>
               <div className='max-md: text-[10px] md:text-[14px] bg-gray-700 text-white my-1 p-1 md:p-4 rounded-xl cursor-pointer hover:bg-green-600'>Proyectos inclusivos</div>

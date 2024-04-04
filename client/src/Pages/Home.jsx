@@ -13,7 +13,7 @@ export default function Home() {
 
 
     <>
-      <div className={`${grayscale ? "grayscale" : ""} ${highContrast ? "high-contrast" : ""} ${whiteContrast ? "white-contrast" : ""} ${negativeContrast ? "negative-contrast" : ""}   my-6 overflow-hidden `} style={{
+      <div className={`${grayscale ? "grayscale" : ""} ${highContrast ? "high-contrast" : ""} ${whiteContrast ? "white-contrast" : ""} ${negativeContrast ? "negative-contrast" : ""}   my-6 overflow-hidden bg-white `} style={{
         fontSize: `${textSize}px`, lineHeight: lineSpacing, wordSpacing: wordSpacing,
       }}>
         <div className=" my-6 ">
