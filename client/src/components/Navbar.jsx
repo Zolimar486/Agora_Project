@@ -4,7 +4,7 @@ import { Menu } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const { textSize, lineSpacing, wordSpacing, grayscale, highContrast, whiteContrast, negativeContrast } = useFontSize();
+  const { textSize, lineSpacing, wordSpacing, grayscale, highContrast, negativeContrast } = useFontSize();
   const [open, setOpen] = useState(false)
   const [openMenu, setOpenMenu] = useState(false)
   const [openSede, setOpenSede] = useState(false)
@@ -41,7 +41,7 @@ const Navbar = () => {
         lineHeight: lineSpacing,
         wordSpacing: wordSpacing,
       }}
-      className={`${grayscale ? "grayscale" : ""} ${highContrast ? "high-contrast" : ""} ${whiteContrast ? "white-contrast" : ""} ${negativeContrast ? "negative-contrast" : ""}   padding-x  h-[70px]  bg-white z-[999] shadow-md p-4 flex items-center justify-between max-md:flex-wrap  max-lg:justify-normal fixed top-0 left-0 w-full 2xl:px-[200px] `}
+      className={`${grayscale ? "grayscale" : ""} ${highContrast ? "high-contrast" : ""} $ ${negativeContrast ? "negative-contrast" : ""}   padding-x  h-[70px]  bg-white z-[999] shadow-md p-4 flex items-center justify-between max-md:flex-wrap  max-lg:justify-normal fixed top-0 left-0 w-full 2xl:px-[200px] `}
     >
       <div>
         <Link to="/">

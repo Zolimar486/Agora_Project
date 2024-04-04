@@ -6,7 +6,7 @@ import { useFontSize } from '../Context/FontSizeContext';
 
 const AccessTool = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { increaseTextSize, increaseLineSpacing, increaseWordSpacing, toggleGrayscale, toggleHighContrast, toggleWhiteContrast, toggleNegativeContrast, resetAll } = useFontSize();
+  const { increaseTextSize, increaseLineSpacing, increaseWordSpacing, toggleGrayscale, toggleHighContrast, toggleNegativeContrast, resetAll } = useFontSize();
 
   return (
     <div className="fixed top-[60px] left-0 z-[9999] font-poppins">
@@ -70,15 +70,7 @@ const AccessTool = () => {
               </div>
             </div>
           </div>
-          <div className='p-1'>
-            <div className=' flex items-start justify-start gap-2 my-1'>
-              <  Lightbulb size={16} className=' text-gray-800' />
-              <div className=' flex flex-col gap-2'>
-                <p className="text-gray-800 font-medium text-sm cursor-pointer" onClick={toggleWhiteContrast} >Fondo Blanco</p>
-
-              </div>
-            </div>
-          </div>
+          
 
           <div className='p-1'>
             <div className=' flex items-start justify-start gap-2 my-1'>

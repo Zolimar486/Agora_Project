@@ -7,7 +7,6 @@ export const FontSizeProvider = ({ children }) => {
   const [wordSpacing, setWordSpacing] = useState('normal');
   const [grayscale, setGrayscale] = useState(false);
   const [highContrast, setHighContrast] = useState(false);
-  const [whiteContrast, setWhiteContrast] = useState(false);
   const [negativeContrast, setNegativeContrast] = useState(false);
 
   const increaseTextSize = () => setTextSize(prevSize => prevSize + 2);
@@ -15,7 +14,6 @@ export const FontSizeProvider = ({ children }) => {
   const increaseWordSpacing = () => setWordSpacing('0.3em');
   const toggleGrayscale = () => setGrayscale(prevValue => !prevValue);
   const toggleHighContrast = () => setHighContrast(prevValue => !prevValue);
-  const toggleWhiteContrast = () => setWhiteContrast(prevValue => !prevValue);
   const toggleNegativeContrast = () => setNegativeContrast(prevValue => !prevValue);
   const resetAll = () => {
     setTextSize(16);
@@ -23,7 +21,6 @@ export const FontSizeProvider = ({ children }) => {
     setWordSpacing('normal');
     setGrayscale(false);
     setHighContrast(false);
-    setWhiteContrast(false);
     setNegativeContrast(false);
   };
 
@@ -35,14 +32,12 @@ export const FontSizeProvider = ({ children }) => {
         wordSpacing,
         grayscale,
         highContrast,
-        whiteContrast,
         negativeContrast,
         increaseTextSize,
         increaseLineSpacing,
         increaseWordSpacing,
         toggleGrayscale,
         toggleHighContrast,
-        toggleWhiteContrast,
         toggleNegativeContrast,
         resetAll,
       }}

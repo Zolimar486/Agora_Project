@@ -7,13 +7,13 @@ import Subscribed from "../components/Subscribed";
 import { useFontSize } from '../Context/FontSizeContext';
 
 export default function Home() {
-  const { textSize, lineSpacing, wordSpacing, grayscale, highContrast, whiteContrast, negativeContrast } = useFontSize();
+  const { textSize, lineSpacing, wordSpacing, grayscale, highContrast, negativeContrast } = useFontSize();
 
   return (
 
 
     <>
-      <div className={`${grayscale ? "grayscale" : ""} ${highContrast ? "high-contrast" : ""} ${whiteContrast ? "white-contrast" : ""} ${negativeContrast ? "negative-contrast" : ""}   my-6 overflow-hidden bg-white `} style={{
+      <div className={`${grayscale ? "grayscale" : ""} ${highContrast ? "high-contrast" : ""}  ${negativeContrast ? "negative-contrast" : ""}   my-6 overflow-hidden bg-white `} style={{
         fontSize: `${textSize}px`, lineHeight: lineSpacing, wordSpacing: wordSpacing,
       }}>
         <div className=" my-6 ">
